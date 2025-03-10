@@ -16,6 +16,8 @@ Este projeto apresenta a modelagem conceitual de um sistema acadêmico, contendo
 #### A modelagem completa está disponível na imagem gerada e incluída neste repositório.
 ![Entidades, Relacienamentos e Atributos](etapa1-conceitual/conceitual.png)
 
+---
+---
 
 ## ETAPA 2 - Modelagem Lógica 
 
@@ -23,9 +25,28 @@ Na Etapa 2 das atividades de banco de dados, a modelagem lógica deve ser feita 
 
 ### Destaques:
 
-+ Nomeação: Usar plural para tabelas e singular para colunas.
-+ Professores: Para a coluna Área de atuação, é necessário pesquisar um tipo de dado adequado para armazenar uma lista fixa de valores.
-+ Entrega: O arquivo deve ser salvo no repositório tanto na versão original quanto exportado como imagem.
++ **Nomeação**: Usar plural para tabelas e singular para colunas.
++ **Professores**: Para a coluna Área de atuação, é necessário pesquisar um tipo de dado adequado para armazenar uma lista fixa de valores.
++ **Entrega**: O arquivo deve ser salvo no repositório tanto na versão original quanto exportado como imagem.
 
 #### A modelagem completa está disponível na imagem gerada e incluída neste repositório.
 ![Entidades, Relacienamentos e Atributos](etapa2-logica/logica.png)
+
+---
+---
+
+## Etapa 3 - Modelagem Física
+
+A modelagem física deste projeto foi implementada no phpMyAdmin usando comandos SQL, criando o banco de dados tecinternet_escola_kelly com suas tabelas, colunas e relacionamentos.
+
+- `descricao_exercicio.md`: descrição completa do exercício
+- `modelo_fisico.md.`: documentação dos comandos utilizados para a criação de banco de dados e tabelas
+- `comandos_crud.md`: Comandos SQL do CRUD, incluindo: 
+    + cadastros de cursos
+    + cadastros de professores e alunos
+    + atualizações 
+
+### Além disso, o repositório contém:
+
+Backup do banco de dados com as tabelas vazias.
+
