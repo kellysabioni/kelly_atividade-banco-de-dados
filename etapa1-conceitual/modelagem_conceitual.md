@@ -40,4 +40,4 @@ Usando o **BrModelo** (ou outra ferramenta de modelagem conceitual), faça a **m
 
 Ao final, **exporte o modelo como uma imagem** e a coloque em seu repositório.
 
-![Entidades, Relacienamentos e Atributos](Atividades%20de%20Banco%20de%20Dados.png)
+![Entidades, Relacienamentos e Atributos](/etapa1-conceitual/conceitual.png)
