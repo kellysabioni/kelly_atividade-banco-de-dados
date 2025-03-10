@@ -2,8 +2,6 @@
 
 ## Modelagem Lógica
 
-### B. Modelagem Lógica
-
 Usando o **MySQL Workbench**, faça a **modelagem lógica** a partir do que fez na modelagem conceitual, transformando as entidades em **tabelas** e seus atributos em **colunas**, além de definir os **tipos de dados** e **relacionamentos**.
 
 🚨*Fique atento(a) quanto ao nome das tabelas e das colunas. A sugestão segue sendo usar **plural para tabelas** e **singular para colunas**.*
