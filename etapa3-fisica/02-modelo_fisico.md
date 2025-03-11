@@ -7,10 +7,11 @@ Usando o **phpMyAdmin e comandos SQL**, você deve fazer a **modelagem física**
 ## Criando Base de dados 
 ``` sql
 CREATE DATABASE tecinternet_escola_kelly CHARACTER SET utf8mb4 ;
--- Criando tabelas
-```
 
-## 1. Cursos
+```
+## Criando tabelas
+
+### 1. Cursos
 ``` sql
 CREATE TABLE cursos( 
     id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, 
@@ -21,7 +22,7 @@ CREATE TABLE cursos(
     );
 ```
 
-## 2. Professores
+### 2. Professores
 ``` sql
 CREATE TABLE professores ( 
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -31,7 +32,7 @@ CREATE TABLE professores (
     );
 ```
 
-## 3. Alunos
+### 3. Alunos
 ``` sql
 CREATE TABLE alunos ( 
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
@@ -42,7 +43,7 @@ CREATE TABLE alunos (
     curso_id INT NOT NULL
     );
 ```
-### Criando relacionamentos 
+## Criando relacionamentos 
 
 1. Cursos => professores
 ``` sql
