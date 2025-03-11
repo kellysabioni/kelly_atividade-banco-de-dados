@@ -1,5 +1,5 @@
 # Comandos CRUD
-
+---
 ## Cadastrando cursos
 ``` sql
 INSERT INTO cursos (nome, carga_horaria)
@@ -9,6 +9,7 @@ VALUES ('Front-End', 40),
 ('Figma', 10),
 ('Redes de Computadores', 100);
 ```
+---
 ---
 ## Cadastrando professores
 ``` sql
@@ -20,7 +21,8 @@ VALUES ('Jon Oliva', 'infra',5),
 ('David Gilmour', 'desenvolvimento',1);
 ```
 ---
-### Associando professores na tabela cursos
+---
+## Associando professores na tabela cursos
 ``` sql
 UPDATE cursos SET professor_id = 1 WHERE id = 5;
 UPDATE cursos SET professor_id = 2 WHERE id = 4;
@@ -41,7 +43,8 @@ END
 WHERE id IN (1, 2, 3, 4, 5);
 ```
 ---
-### Cadastrando alunos 
+---
+## Cadastrando alunos 
 ``` sql
 INSERT INTO alunos(nome, curso_id, data_nasc, nota_1, nota_2)
 VALUES
