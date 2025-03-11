@@ -6,7 +6,7 @@ Usando o **phpMyAdmin e comandos SQL**, você deve fazer a **modelagem física**
 
 ## Criando Base de dados 
 ``` sql
-CREATE DATABASE tecinternet_escola_kelly;
+CREATE DATABASE tecinternet_escola_kelly CHARACTER SET utf8mb4 ;
 -- Criando tabelas
 ```
 
