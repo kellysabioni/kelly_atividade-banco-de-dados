@@ -10,7 +10,6 @@ VALUES ('Front-End', 40),
 ('Redes de Computadores', 100);
 ```
 ---
----
 ## Cadastrando professores
 ``` sql
 INSERT INTO professores (nome, area_atuacao, curso_id)
@@ -20,7 +19,6 @@ VALUES ('Jon Oliva', 'infra',5),
 ('Ozzy Osbourne', 'desenvolvimento',2),
 ('David Gilmour', 'desenvolvimento',1);
 ```
----
 ---
 ## Associando professores na tabela cursos
 ``` sql
@@ -42,7 +40,6 @@ SET professor_id = CASE
 END
 WHERE id IN (1, 2, 3, 4, 5);
 ```
----
 ---
 ## Cadastrando alunos 
 ``` sql
