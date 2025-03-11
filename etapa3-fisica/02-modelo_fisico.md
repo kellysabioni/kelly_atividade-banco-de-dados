@@ -3,7 +3,7 @@
 Usando o **phpMyAdmin e comandos SQL**, você deve fazer a **modelagem física** de um banco de dados chamado **tecinternet_escola_seunome** e nele criar as **tabelas**, **colunas** e **relacionamentos**.
 
 💡*Não se esqueça de **guardar** todos os comandos SQL que utilizou na **modelagem física** em um arquivo Markdown (exemplo: **modelo-fisico.md**). Este arquivo deve ser colocado no seu repositório.*
-
+---
 ## Criando Base de dados 
 ``` sql
 CREATE DATABASE tecinternet_escola_kelly CHARACTER SET utf8mb4 ;
@@ -63,7 +63,6 @@ ALTER TABLE professores
 ALTER TABLE alunos
     ADD CONSTRAINT fk_alunos_cursos
     FOREIGN KEY (curso_id) REFERENCES cursos(id);
-```
-
+``` 
 ---
 ## Backup banco de dados e tabelas vazias
