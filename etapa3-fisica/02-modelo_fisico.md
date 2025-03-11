@@ -65,5 +65,5 @@ ALTER TABLE alunos
     FOREIGN KEY (curso_id) REFERENCES cursos(id);
 ```
 
-
+---
 ## Backup banco de dados e tabelas vazias
