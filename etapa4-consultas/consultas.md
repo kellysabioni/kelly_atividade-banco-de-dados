@@ -191,3 +191,12 @@ ORDER BY media DESC
 ;
 ```
 ---
+4. Criar uma consulta que mostre a quantidade de alunos com média **maior ou igual a 7**.
+``` sql
+SELECT
+    COUNT(nome) AS Qtde
+FROM alunos
+WHERE
+    (nota_1 + nota_2)/2 >= 7
+;
+```
