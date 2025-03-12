@@ -133,3 +133,15 @@ WHERE id IN (
 DELETE FROM alunos WHERE id IN ( 1 , 7 );
 ```
 ---
+### 13. Faça uma consulta que mostre a lista de alunos atualizada e o título dos cursos que fazem, classificados pelo nome do aluno.
+``` sql
+SELECT
+	alunos.nome AS Aluno,
+    cursos.nome AS Curso
+FROM alunos 
+	JOIN cursos
+	ON alunos.curso_id = cursos.id 
+ORDER BY aluno
+;
+```
+---
