@@ -26,3 +26,14 @@ ORDER BY Curso
 ;
 ```
 ---
+### 4. Faça uma consulta que mostre os nomes dos professores que são somente da área "desenvolvimento".
+``` sql
+SELECT 
+	area_atuacao AS 'Área de Atuação',
+    nome AS Professor
+FROM professores
+WHERE area_atuacao = 'desenvolvimento'
+ORDER BY Professor
+;
+```
+---
