@@ -100,3 +100,18 @@ ORDER BY qtde
 ;
 ```
 ---
+### 10. Faça uma consulta que mostre o nome dos alunos, suas notas, médias, e o título dos cursos que fazem. Devem ser considerados somente os alunos de Front-End e Back-End. Mostre os resultados classificados pelo nome do aluno.
+``` sql
+SELECT
+	alunos.nome AS Aluno,
+    alunos.nota_1 AS 'Nota 01',
+    alunos.nota_2 AS 'Nota 02',
+    FORMAT(((nota_1 + nota_2)/2),2) AS 'Media Final',
+    cursos.nome AS Curso        
+FROM alunos JOIN cursos
+ON alunos.curso_id = cursos.id 
+WHERE cursos.nome = 'Front-End' OR  cursos.nome = 'Back-End'
+ORDER BY Aluno
+;
+```
+---
