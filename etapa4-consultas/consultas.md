@@ -120,3 +120,16 @@ ORDER BY Aluno
 UPDATE cursos SET nome = 'Adobe XD' AND carga_horaria = 15 WHERE id = 4;
 ```
 ---
+### 12. Faça uma consulta que exclua um aluno do curso de Redes de Computadores e um aluno do curso de UX/UI.
+``` sql
+-- Exclusão aleatória
+DELETE FROM alunos 
+WHERE id IN (
+    (SELECT id FROM alunos WHERE curso_id = 5 LIMIT 1),
+    (SELECT id FROM alunos WHERE curso_id = 3 LIMIT 1)
+);
+
+-- Exclusão determinando o aluno 
+DELETE FROM alunos WHERE id IN ( 1 , 7 );
+```
+---
