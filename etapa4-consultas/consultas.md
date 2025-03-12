@@ -47,3 +47,16 @@ GROUP BY area_atuacao
 ;
 ```
 ---
+### 6. Faça uma consulta que mostre o nome dos alunos, o título e a carga horária dos cursos que fazem.
+``` sql
+SELECT
+	alunos.nome AS Aluno,
+    cursos.nome AS Curso,
+    cursos.carga_horaria AS 'Carga Horaria'
+    
+FROM alunos JOIN cursos
+ON alunos.curso_id = cursos.id 
+ORDER BY aluno
+;
+```
+---
