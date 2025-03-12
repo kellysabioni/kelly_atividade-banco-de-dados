@@ -16,3 +16,13 @@ SELECT
 FROM alunos;
 ```
 ---
+### 3. Faça uma consulta que calcule o limite de faltas de cada curso de acordo com a carga horária. Considere o limite como 25% da carga horária. Classifique em ordem crescente pelo título do curso.
+``` sql
+SELECT 
+	nome AS Curso,
+	(carga_horaria * 0.25) AS "Limite de Faltas"
+FROM cursos
+ORDER BY Curso
+;
+```
+---
