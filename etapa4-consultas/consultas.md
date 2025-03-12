@@ -37,3 +37,13 @@ ORDER BY Professor
 ;
 ```
 ---
+### 5. Faça uma consulta que mostre a quantidade de professores que cada área ("design", "infra", "desenvolvimento") possui.
+``` sql
+SELECT
+	area_atuacao AS 'Área de Atuação',
+    COUNT(nome) AS 'Qtde de Docentes'
+FROM professores
+GROUP BY area_atuacao
+;
+```
+---
