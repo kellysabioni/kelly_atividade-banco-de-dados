@@ -115,3 +115,8 @@ ORDER BY Aluno
 ;
 ```
 ---
+### 11. Faça uma consulta que altere o nome do curso de Figma para Adobe XD e sua carga horária de 10 para 15.
+``` sql
+UPDATE cursos SET nome = 'Adobe XD' AND carga_horaria = 15 WHERE id = 4;
+```
+---
