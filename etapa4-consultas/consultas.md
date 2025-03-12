@@ -60,3 +60,14 @@ ORDER BY aluno
 ;
 ```
 ---
+### 7. Faça uma consulta que mostre o nome dos professores e o título do curso que lecionam. Classifique pelo nome do professor.
+``` sql
+SELECT
+	professores.nome AS Professor,
+    cursos.nome AS Curso        
+FROM professores JOIN cursos
+ON professores.curso_id = cursos.id 
+ORDER BY Professor
+;
+```
+---
