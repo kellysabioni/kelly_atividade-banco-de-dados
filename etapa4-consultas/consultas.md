@@ -1,7 +1,6 @@
 # Atividades de Banco de Dados - Etapa 4 (FINAL)
 
 ## CRUD - Consultas
-
 ---
 ### 1. Faça uma consulta que mostre os alunos que nasceram antes do ano 2009
 ``` sql
@@ -22,8 +21,7 @@ SELECT
 	nome AS Curso,
 	(carga_horaria * 0.25) AS "Limite de Faltas"
 FROM cursos
-ORDER BY Curso
-;
+ORDER BY Curso;
 ```
 ---
 ### 4. Faça uma consulta que mostre os nomes dos professores que são somente da área "desenvolvimento".
@@ -33,8 +31,7 @@ SELECT
     nome AS Professor
 FROM professores
 WHERE area_atuacao = 'desenvolvimento'
-ORDER BY Professor
-;
+ORDER BY Professor;
 ```
 ---
 ### 5. Faça uma consulta que mostre a quantidade de professores que cada área ("design", "infra", "desenvolvimento") possui.
@@ -43,8 +40,7 @@ SELECT
 	area_atuacao AS 'Área de Atuação',
     COUNT(nome) AS 'Qtde de Docentes'
 FROM professores
-GROUP BY area_atuacao
-;
+GROUP BY area_atuacao;
 ```
 ---
 ### 6. Faça uma consulta que mostre o nome dos alunos, o título e a carga horária dos cursos que fazem.
@@ -53,11 +49,9 @@ SELECT
 	alunos.nome AS Aluno,
     cursos.nome AS Curso,
     cursos.carga_horaria AS 'Carga Horaria'
-    
 FROM alunos JOIN cursos
 ON alunos.curso_id = cursos.id 
-ORDER BY aluno
-;
+ORDER BY aluno;
 ```
 ---
 ### 7. Faça uma consulta que mostre o nome dos professores e o título do curso que lecionam. Classifique pelo nome do professor.
@@ -67,8 +61,7 @@ SELECT
     cursos.nome AS Curso        
 FROM professores JOIN cursos
 ON professores.curso_id = cursos.id 
-ORDER BY Professor
-;
+ORDER BY Professor;
 ```
 ---
 ### 8. Faça uma consulta que mostre o nome dos alunos, o título dos cursos que fazem, e o professor de cada curso.
@@ -83,9 +76,7 @@ FROM alunos
 
 	JOIN professores
     ON professores.curso_id = cursos.id 
-
-ORDER BY Aluno
-;
+ORDER BY Aluno;
 ```
 ---
 ### 9. Faça uma consulta que mostre a quantidade de alunos que cada curso possui. Classifique os resultados em ordem descrecente de acordo com a quantidade de alunos.
@@ -96,8 +87,7 @@ SELECT
 FROM alunos JOIN cursos
 ON alunos.curso_id = cursos.id 
 GROUP BY cursos.nome
-ORDER BY qtde
-;
+ORDER BY qtde;
 ```
 ---
 ### 10. Faça uma consulta que mostre o nome dos alunos, suas notas, médias, e o título dos cursos que fazem. Devem ser considerados somente os alunos de Front-End e Back-End. Mostre os resultados classificados pelo nome do aluno.
@@ -111,8 +101,7 @@ SELECT
 FROM alunos JOIN cursos
 ON alunos.curso_id = cursos.id 
 WHERE cursos.nome = 'Front-End' OR  cursos.nome = 'Back-End'
-ORDER BY Aluno
-;
+ORDER BY Aluno;
 ```
 ---
 ### 11. Faça uma consulta que altere o nome do curso de Figma para Adobe XD e sua carga horária de 10 para 15.
@@ -128,7 +117,6 @@ WHERE id IN (
     (SELECT id FROM alunos WHERE curso_id = 5 LIMIT 1),
     (SELECT id FROM alunos WHERE curso_id = 3 LIMIT 1)
 );
-
 -- Exclusão determinando o aluno 
 DELETE FROM alunos WHERE id IN ( 1 , 7 );
 ```
@@ -141,11 +129,9 @@ SELECT
 FROM alunos 
 	JOIN cursos
 	ON alunos.curso_id = cursos.id 
-ORDER BY aluno
-;
+ORDER BY aluno;
 ```
 ---
-
 
 ## 🔥 DESAFIOS 🔥
 ---
@@ -175,8 +161,7 @@ SELECT
 FROM alunos
 WHERE
     (nota_1 + nota_2)/2 >= 7
-ORDER BY media DESC
-;
+ORDER BY media DESC;
 ```
 ---
 3. Criar uma consulta que calcule a média das notas de cada aluno e mostre somente os alunos que tiveram a média **menor que 7**.
@@ -187,8 +172,7 @@ SELECT
 FROM alunos
 WHERE
     (nota_1 + nota_2)/2 <= 7
-ORDER BY media DESC
-;
+ORDER BY media DESC;
 ```
 ---
 4. Criar uma consulta que mostre a quantidade de alunos com média **maior ou igual a 7**.
@@ -197,6 +181,5 @@ SELECT
     COUNT(nome) AS Qtde
 FROM alunos
 WHERE
-    (nota_1 + nota_2)/2 >= 7
-;
+    (nota_1 + nota_2)/2 >= 7;
 ```
