@@ -145,3 +145,25 @@ ORDER BY aluno
 ;
 ```
 ---
+
+
+## 🔥 DESAFIOS 🔥
+---
+1. Criar uma consulta que calcule a idade do aluno
+``` sql
+-- Usando DATEDIFF
+SELECT 
+    nome AS Aluno,
+    -- FLOOR arredonda para baixo 
+    --Divisão por 365.25 para definir os anos considerando anos bissextos 
+    FLOOR (DATEDIFF(CURRENT_DATE, data_nasc) / 365.25) AS Idade
+FROM alunos;
+
+-- Usando TIMESTAMPDIFF
+SELECT 
+    nome AS Aluno,
+    -- ROUND arredonda para numero intero
+    ROUND(TIMESTAMPDIFF(YEAR, data_nasc, CURRENT_DATE)) AS Idade
+FROM alunos;
+```
+---
