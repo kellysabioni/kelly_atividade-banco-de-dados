@@ -177,4 +177,17 @@ WHERE
     (nota_1 + nota_2)/2 >= 7
 ORDER BY media DESC
 ;
-
+```
+---
+3. Criar uma consulta que calcule a média das notas de cada aluno e mostre somente os alunos que tiveram a média **menor que 7**.
+``` sql
+SELECT
+    nome,
+    FORMAT ((nota_1 + nota_2)/2,2) AS media
+FROM alunos
+WHERE
+    (nota_1 + nota_2)/2 <= 7
+ORDER BY media DESC
+;
+```
+---
