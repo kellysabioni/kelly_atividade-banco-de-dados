@@ -15,6 +15,7 @@ Agora, na **modelagem lógica**, você deverá **pesquisar qual tipo de dados** 
 ---
 
 Ao final, coloque o arquivo de modelagem lógica em seu repositório do exercício em versão original e também exportado em formato de imagem.
+
 ![Entidades, Relacienamentos e Atributos](/etapa2-logica/logica.png)
 
 
